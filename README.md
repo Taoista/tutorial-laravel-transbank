@@ -1,66 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+
+# 🚀 Tutorial Transbank con Laravel
+
+![Project Banner](https://i.ibb.co/YT7HnN6/tutorial.png)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://youtu.be/bHX8ZY-su_I)
+[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)](https://www.tu_manual_web.com)
+## 📖 Descripción 
+
+En este tutorial te enseño cómo integrar Transbank Webpay en Laravel de manera fácil y rápida. A lo largo del video, aprenderás a instalar el SDK de Transbank, configurar tu proyecto Laravel, y crear un flujo completo de pago en tu aplicación web. También te mostraré cómo probar tu integración en el entorno de prueba de Transbank antes de pasarla a producción. ¡Sigue el tutorial y habilita pagos en línea con Webpay en tu sitio Laravel!
+
+
+## ✨  Pasos 
+
+- 🔥 Creacion del proyecto laravel
+- 💡 Instalacion del paquete de transbank
+- 🎨 Crear Migraciones
+
+## ✨ Documentación 
+
+- 🔥 https://www.transbankdevelopers.cl/documentacion/como_empezar
+
+
+
+
+## 🛠Instalación
+
+copia el repositorio
+```bash
+git clone git@github.com:Taoista/tutorial-laravel-transbank.git
+```
+
+## 🛠️ Tarjetas de prueba
+| Tarjeta        | Numero                 | CVV    | Expiracion  | Result                                                                   |
+|------------------|------------------------|--------|------------------|--------------------------------------------------------------------------|
+| VISA             | 4051 8856 0044 6623     | 123    | Any              | Aprovado.                                         |
+| AMEX             | 3700 0000 0002 032      | 1234   | Any              | Aprovado.                                         |
+| MASTERCARD       | 5186 0595 5959 0568     | 123    | Any              | Rechazado.                                         |
+| Redcompra        | 4051 8842 3993 7763     | N/A    | N/A              |  Aprovado. |
+| Redcompra        | 4511 3466 6003 7060     | N/A    | N/A              | Aprovado. |
+| Redcompra        | 5186 0085 4123 3829     | N/A    | N/A              | Rechazado |
+| Prepaid VISA     | 4051 8860 0005 6590     | 123    | Any              | Aprovado                                         |
+| Prepaid MASTERCARD| 5186 1741 1062 9480     | 123    | Any              | Rechazado.                                         |
+
+
+
+#### LUMEN - LARAVEL
+
+Entre  a la carpeta
+```bash
+cd tutorial-laravel-transbank
+```
+
+Instala las dependencias
+```bash
+composer install
+```
+
+Copia el archivo de entorno
+```bash
+cp .env.example .env
+```
+
+Ajusta el archivo env con tu configuracion de servidor local de base de datos
+```bash
+
+```
+Ejecuta las migraciones
+```bash
+php artisan migrate
+```
+
+
+
+Ejecuta el servidor
+```bash
+php artisan serve
+```
+#### Comandos
+Paquete de transbank
+```bash
+composer require transbank/transbank-sdk:~2.0
+```
+
+
+
+## 📬 Mis Redes Sociales
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/Taoista)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alberto-olave-carvajal-838482197/)
+[![Instagram](https://img.shields.io/badge/Instagram-E1306C?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/alberto_olave73/)
+[![Threads](https://img.shields.io/badge/Threads-000000?style=flat&logo=threads&logoColor=white)](https://www.threads.net/@alberto_olave73?hl=es-la)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@devtao3753)
+[![Web](https://img.shields.io/badge/Web-0078D4?style=flat&logo=internet-explorer&logoColor=white)](https://alberto-olave.cl)
+[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)](https://www.tu_manual_web.com)
+
+
+
+---
 
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  ❤️ by  taoista Sigueme :)
 </p>
 
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
