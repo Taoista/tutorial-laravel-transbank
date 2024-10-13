@@ -3,7 +3,7 @@
 
 ![Project Banner](https://i.ibb.co/YT7HnN6/tutorial.png)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://youtu.be/bHX8ZY-su_I)
-[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)](https://www.tu_manual_web.com)
+[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)]([https://www.tu_manual_web.com](https://alberto-olave.cl/tutoriales/2))
 ## 📖 Descripción 
 
 En este tutorial te enseño cómo integrar Transbank Webpay en Laravel de manera fácil y rápida. A lo largo del video, aprenderás a instalar el SDK de Transbank, configurar tu proyecto Laravel, y crear un flujo completo de pago en tu aplicación web. También te mostraré cómo probar tu integración en el entorno de prueba de Transbank antes de pasarla a producción. ¡Sigue el tutorial y habilita pagos en línea con Webpay en tu sitio Laravel!
@@ -92,7 +92,7 @@ composer require transbank/transbank-sdk:~2.0
 [![Threads](https://img.shields.io/badge/Threads-000000?style=flat&logo=threads&logoColor=white)](https://www.threads.net/@alberto_olave73?hl=es-la)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat&logo=youtube&logoColor=white)](https://www.youtube.com/@devtao3753)
 [![Web](https://img.shields.io/badge/Web-0078D4?style=flat&logo=internet-explorer&logoColor=white)](https://alberto-olave.cl)
-[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)](https://www.tu_manual_web.com)
+[![Manual](https://img.shields.io/badge/Manual-FFA500?style=flat&logo=book&logoColor=white)]([https://www.tu_manual_web.com](https://alberto-olave.cl/tutoriales/2))
 
 
 
